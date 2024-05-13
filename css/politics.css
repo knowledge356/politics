@@ -1,0 +1,249 @@
+
+body{
+    margin:0;
+    background:whitesmoke;
+    font-family: 'Poetsen One', sans-serif;
+  }
+  
+  
+  
+  
+  /* Navigation bar and logo */
+  #main_menu {
+    display: flex;
+    background: black;
+    width: 100%;
+    height: 82px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10 20px; /* Increased padding for better spacing */
+    position: fixed;
+    top:0;
+    z-index: 9999; /* Ensure navigation stays on top */
+  }
+  
+  
+  nav#main_menu img {
+    max-width: 40%;
+    height: 82px;
+  }
+  
+  #main_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  #main_menu ul li {
+    margin-left: 20px;
+    display: inline-block;
+    position:relative;
+  }
+  
+  #main_menu ul li:first-child {
+    margin-left: 0;
+  }
+  
+  
+  
+  #main_menu ul li a {
+    text-decoration: none;
+    color: bisque;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    padding: 12px 15px;
+  }
+  
+  #main_menu ul li a:hover {
+    background: #FDFFC2;
+    color: aqua;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  /* dropdown menu*/
+  
+  
+  
+  #main_menu ul ul {
+    display: none;
+    position: absolute;
+    background: #353232;
+    border-radius: 0 0 10px 10px;
+    top: 0;
+   
+  }
+  
+  #main_menu ul li:hover > ul {
+    display: block;
+  }
+  #main_menu ul ul li {
+    display: block;
+    padding: 160px 5px;
+  }
+  
+  #main_menu ul ul li a {
+    color: bisque;
+    text-decoration: none;
+  }
+  
+  /* Main content section */
+  .content {
+    margin-top:82px; /* Adjusted to prevent content from overlapping with the navigation bar */
+    padding: 20px;
+    background:url(images/responsivediv.jpg);
+    background-size: cover;
+  
+  }
+  
+  /* Responsive link buttons */
+  .link-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .link-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-buttons a:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav#main_menu ul {
+        flex-direction: column;
+    }
+  
+    nav#main_menu ul li {
+        margin: 10px 0;
+    }
+  
+    nav#main_menu ul ul {
+        position: static;
+        display: none;
+        width: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    }
+  
+    nav#main_menu ul ul li {
+        padding: 5px 0;
+    }
+  
+    .link-buttons {
+        flex-direction: row;
+        padding:5px 8px;
+    }
+  }
+  
+  /* politics image*/
+
+
+  .web_design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .web_design img {
+    max-width: 100%; /* Set max-width to 100% for responsiveness */
+    height: 400px; /* Automatically adjust height to maintain aspect ratio */
+    margin-top: 75px;
+  }
+  
+
+  /* content are css */
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+h3 {
+    color: #555;
+    margin-bottom: 1rem;
+}
+p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+.important {
+    color: #ff5733;
+    font-weight: bold;
+}
+  
+/* Footer */
+.fotter{
+  width:100%;
+  height: 200px;
+    background:#D8AE7E;
+  
+  
+  }
+  
+  .fotter ul{
+    list-style: none;
+   
+  
+  }
+  .fotter ul li{
+   
+    display:inline-block;
+    padding: 12px 15px;
+    margin-top:50px;
+    background:#803D3B;
+    border-radius: 20px;
+   
+    margin:10px;
+    
+    
+  }
+  
+  .fotter ul li a{
+  
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   
+  }
+  
+  .fotter ul li a:hover{
+    opacity:0.5;
+    
+    font-weight: bolder;
+    font-size: 20px;
+    color:aqua;
+  }
+  
+  .copy{
+    width:100%;
+    height:60px;
+    background: black;
+  }
+  
+  .copy footer{
+    color:aqua;
+  }
+ 
